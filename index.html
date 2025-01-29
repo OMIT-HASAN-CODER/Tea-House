@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House</title>
     <link rel="stylesheet" href="src/output.css">
-    <!-- Google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Fontawesome cdn -->
     <script src="https://kit.fontawesome.com/1007e9949d.js" crossorigin="anonymous"></script>
     <style>
         .font-manrope {
@@ -114,11 +112,14 @@
         </section>
         <section class="mb-24">
             <div class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16">
-                <div class="flex justify-center items-center overflow-hidden">
+                <div class="relative flex justify-center items-center overflow-hidden">
                     <div class="w-5/6">
                         <h1 class="text-5xl font-extrabold mb-5 mt-10">Meet Our Super Clients</h1>
                         <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                         <button class="bg-white text-xl text-orange-600 font-bold px-5 py-3 rounded-lg">Show All</button>
+                    </div>
+                    <div class="absolute bottom-0 right-10">
+                        <img class="p-1" src="images/bg_cup.png" alt="bg_cup">
                     </div>
                 </div>
                 <div class="relative py-24">
@@ -132,7 +133,7 @@
                                 <h1 class="font-bold">Ilham Yuda</h1>
                                 <small class="text-gray-500 font-medium">Businessman</small>
                             </div>
-                            <div class="absolute bottom-5 right-5 bg-white rounded-full">
+                            <div class="absolute bottom-5 right-5">
                                 <img class="p-1" src="images/circles.png" alt="circles">
                             </div>
                         </div>
@@ -196,5 +197,59 @@
             </div>
         </section>
     </main>
+    <footer class="bg-orange-100 py-10 px-4 md:px-16">
+        <div class="w-60/100 mx-auto">
+            <div class="mb-8 flex justify-between">
+                <img class="mb-8" src="images/cup.png" alt="cup">
+                <div class="flex items-center gap-5">
+                    <h4 class="text-xl text-gray-500">Ready to get strated?</h4>
+                    <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Get Started</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a class="hover:text-orange-600" href="#">Home</a></li>
+                        <li><a class="hover:text-orange-600" href="#">About Us</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Our Service</h3>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a class="hover:text-orange-600" href="#">Life Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Car Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Health Insurance</a></li>
+                        <li><a class="hover:text-orange-600" href="#">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Help</h3>
+                    <ul class="space-y-2 text-gray-500">
+                        <li><a class="hover:text-orange-600" href="#">FAQs</a></li>
+                        <li><a class="hover:text-orange-600" href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-5 md:mb-12">Subscribe to our newsletter</h3>
+                    <div class="flex flex-col space-y-2">
+                        <div>
+                            <input class="bg-transparent border-b-2 border-gray-500 w-4/5" type="email" placeholder="Email Address"><i class="fa-solid fa-chevron-right w-8 h-8 pt-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-full text-white text-center"></i>
+                            <div class="flex items-center gap-6 w2/5 mb-2 mt-8">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 mt-4">
+                <p class="text-sm text-gray-500 font-bold">© 2025 Tea House - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
